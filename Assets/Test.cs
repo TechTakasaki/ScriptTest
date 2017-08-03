@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Test : MonoBehaviour{
         void Start(){
                 int[] array = new int[5];
@@ -11,7 +12,12 @@ public class Test : MonoBehaviour{
                 array[3] = 13;
                 array[4] = 7;
 
-                for (int i = 4; i >=0; i--){
+        for (int i = 0; i < 5; i++)
+        {
+            Debug.Log(array[i]);
+        }
+
+        for (int i = 4; i >=0; i--){
                         Debug.Log(array [i]);
                 }
         }
